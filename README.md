@@ -20,7 +20,13 @@ Django Celery Mail Queue is a project that allows you to efficiently send emails
    git clone https://github.com/niluws/mail-queue.git
    ```
 
-2. Create a virtual environment and install the required dependencies:
+2. Start the Docker containers:
+
+   ```bash
+   docker-compose up -d
+   ```
+   
+3. Create a virtual environment and install the required dependencies:
 
    ```bash
    cd mail-queue
@@ -29,27 +35,27 @@ Django Celery Mail Queue is a project that allows you to efficiently send emails
    pip install -r requirements.txt
    ```
 
-3. Configure your Django settings, including your database and email settings, in the `settings.py` file.
+4. Configure your Django settings, including your database and email settings, in the `settings.py` file.
 
-4. Migrate the database:
+5. Migrate the database:
 
    ```bash
    python manage.py migrate
    ```
 
-5. Start the Celery worker:
+6. Start the Celery worker:
 
    ```bash
    celery -A core worker --loglevel=info
    ```
 
-6. Run the Django development server:
+7. Run the Django development server:
 
    ```bash
    python manage.py runserver
    ```
 
-7. Access the application in your web browser at [http://localhost:8000/](http://localhost:8000/).
+8. Access the application in your web browser at [http://localhost:8000/](http://localhost:8000/).
 
 ## Usage
 
