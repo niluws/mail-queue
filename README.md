@@ -2,15 +2,15 @@
 
 # Django Celery Mail Queue
 
-Django Celery Mail Queue is a project that allows you to efficiently send emails to multiple recipients with optional attachments . It provides a queuing mechanism to ensure that emails are sent .
+Django Celery Mail Queue is a project that allows you to efficiently send emails to multiple recipients with optional attachments . It provides a queuing mechanism to send emails .
 
 ## Features
 
-- Send emails to multiple recipients with customizable content.
+- Send emails to multiple recipients.
 - Attach multiple files to your emails with a single click.
+- Cancel pending emails
 - Uses Celery to handle email sending asynchronously
 - Utilizes a Postgres database to store email tasks and their status.
-- Easy setup and configuration.
 
 ## Installation
 
